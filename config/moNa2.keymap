@@ -23,20 +23,6 @@
             layers = <0>;
         };
 
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <0 1>;
-            timeout-ms = <800>;
-            layers = <0 2 3>;
-        };
-
-        esc {
-            bindings = <&kp ESCAPE>;
-            key-positions = <0 1>;
-            timeout-ms = <800>;
-            layers = <1>;
-        };
-
         backquat {
             bindings = <&kp GRAVE>;
             key-positions = <20 21>;
