@@ -84,7 +84,7 @@
 &kp LEFT_SHIFT  &mkp RCLK  &mkp LCLK  &kp LCMD  &lt 1 LANG2  &lt 3 SPACE    &kp ENTER  &lt 2 LANGUAGE_1                             &kp RIGHT_ALT
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&scroll_up_down>, <&scroll_up_down>;
         };
 
         layer_1 {
