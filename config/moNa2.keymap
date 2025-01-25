@@ -19,32 +19,28 @@
         backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <8 9>;
-            timeout-ms = <500>;
+            timeout-ms = <800>;
             layers = <0 1>;
-            require-prior-idle-ms = <1000>;
         };
 
         singleQu {
             bindings = <&kp SINGLE_QUOTE>;
             key-positions = <20 21>;
-            timeout-ms = <500>;
-            require-prior-idle-ms = <1000>;
+            timeout-ms = <800>;
             layers = <0>;
         };
 
         tab {
             bindings = <&kp TAB>;
             key-positions = <0 1>;
-            timeout-ms = <500>;
-            require-prior-idle-ms = <1000>;
+            timeout-ms = <800>;
             layers = <0 2 3>;
         };
 
         esc {
             bindings = <&kp ESCAPE>;
             key-positions = <0 1>;
-            timeout-ms = <500>;
-            require-prior-idle-ms = <1000>;
+            timeout-ms = <800>;
             layers = <1>;
         };
     };
