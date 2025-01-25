@@ -84,7 +84,7 @@
 &kp LEFT_SHIFT  &mkp RCLK  &mkp LCLK  &kp LCMD  &lt 1 LANG2  &lt 3 SPACE    &kp ENTER  &lt 2 LANGUAGE_1                             &kp RIGHT_ALT
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOLUME_UP>;
+            sensor-bindings = <&inc_dec_kp C D>, <&inc_dec_kp A B>;
         };
 
         layer_1 {
