@@ -36,6 +36,13 @@
             layers = <2>;
             timeout-ms = <800>;
         };
+
+        windowmax {
+            bindings = <&kp LC(LG(UP))>;
+            key-positions = <33 32>;
+            timeout-ms = <800>;
+            layers = <3>;
+        };
     };
 
     macros {
@@ -76,6 +83,8 @@
 &kp Z           &kp X      &kp C      &kp V     &kp B        &kp LCTRL      &kp BACKSPACE  &kp N             &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &kp LEFT_SHIFT  &mkp RCLK  &mkp LCLK  &kp LCMD  &lt 1 LANG2  &lt 3 SPACE    &kp ENTER      &lt 2 LANGUAGE_1                             &kp RIGHT_ALT
             >;
+
+            sensor-bindings = <&scroll_up_down>, <&scroll_up_down>;
         };
 
         layer_1 {
@@ -98,10 +107,10 @@
 
         layer_3 {
             bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                     &trans  &trans  &trans  &trans  &trans
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans                  &trans          &trans                   &trans   &trans    &trans  &trans                          &trans
+&trans  &trans  &trans  &trans  &trans                                    &kp LC(LA(LG(LEFT)))        &kp LC(LA(LG(DOWN)))   &kp LA(LC(LG(RIGHT)))     &trans                     &trans
+&trans  &trans  &trans  &trans  &trans                  &trans    &trans  &kp LS(LA(LG(LEFT_ARROW)))  &kp LS(LA(LG(RIGHT)))  &kp LS(LA(LC(LG(LEFT))))  &kp LS(LA(LG(LC(RIGHT))))  &trans
+&trans  &trans  &trans  &trans  &kp LA(LC(LG(PERIOD)))  &trans    &trans  &kp LC(LG(LEFT))            &kp LC(LG(LS(DOWN)))   &kp LC(LG(LS(UP)))        &kp LC(LG(RIGHT))          &kp LA(LC(LG(UP)))
+&trans  &trans  &trans  &trans  &trans                  &trans    &trans  &trans                                                                                                  &trans
             >;
         };
 
