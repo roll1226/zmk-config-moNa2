@@ -99,6 +99,15 @@
 
             tap-ms = <20>;
         };
+
+        scroll_left_right: scroll_left_right {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
+
+            tap-ms = <20>;
+            label = "SCROLL_LEFT_RIGHT";
+        };
     };
 
     keymap {
@@ -132,7 +141,7 @@
 &trans           &trans       &trans    &trans        &trans        &trans    &trans  &trans                                                                 &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp LS(K_SCROLL_UP) LS(K_SCROLL_DOWN)>;
+            sensor-bindings = <&scroll_left_right>;
         };
 
         layer_3 {
