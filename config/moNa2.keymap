@@ -131,6 +131,8 @@
 &kp F4           &kp F5       &kp F6    &kp C_VOL_DN  &kp C_VOL_UP  &trans    &trans  &kp UNDERSCORE  &kp PLUS       &kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp BACKSLASH
 &trans           &trans       &trans    &trans        &trans        &trans    &trans  &trans                                                                 &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp LS(K_SCROLL_UP) LS(K_SCROLL_DOWN)>;
         };
 
         layer_3 {
