@@ -19,8 +19,4 @@ config ZMK_KEYBOARD_NAME
 config ZMK_SPLIT
     default y
 
-config ZMK_ENCODER
-    bool "Enable encoder support"
-    default y
-
 endif
